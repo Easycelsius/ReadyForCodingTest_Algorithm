@@ -55,7 +55,8 @@ public class Tuple {
 		
 		// 배열화
 		int[] answer = smallList.stream().mapToInt(i->i).toArray();
-
+//		Integer[] answer1 = smallList.toArray(new Integer[smallList.size()]);
+		
 		return answer;
 	}
 
