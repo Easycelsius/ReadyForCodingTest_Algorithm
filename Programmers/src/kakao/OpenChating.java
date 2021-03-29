@@ -1,9 +1,9 @@
-package lineCodingTest;
+package kakao;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class T1 {
+public class OpenChating {
 	public static String[] solution(String[] records) {
 
 		String[] rec;

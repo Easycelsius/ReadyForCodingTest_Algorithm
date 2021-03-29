@@ -1,6 +1,6 @@
-package lineCodingTest;
+package dynamicprogramming;
 
-public class T21 {
+public class CollectingSticker_2 {
 	public static int solution(int sticker[]) {
 		
 		if(sticker.length<=1) {
