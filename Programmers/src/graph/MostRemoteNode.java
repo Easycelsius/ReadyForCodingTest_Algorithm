@@ -1,4 +1,4 @@
-package bfs;
+package graph;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -7,10 +7,10 @@ import java.util.Queue;
 public class MostRemoteNode {
 
 	static int count = 0;
-	static boolean[] visited; // 방문 여부 확인, 전부 false
-	static Queue<Integer> que = new LinkedList<>(); // bfs를 위한 대기열
-	static Queue<Integer> countQue = new LinkedList<>(); // 레벨을 판단하기 위한 자료
-	static int[] answer; // 레벨과 방문노드를 저장하기 위함
+	static boolean[] visited; // 諛⑸Ц �뿬遺� �솗�씤, �쟾遺� false
+	static Queue<Integer> que = new LinkedList<>(); // bfs瑜� �쐞�븳 ��湲곗뿴
+	static Queue<Integer> countQue = new LinkedList<>(); // �젅踰⑥쓣 �뙋�떒�븯湲� �쐞�븳 �옄猷�
+	static int[] answer; // �젅踰④낵 諛⑸Ц�끂�뱶瑜� ���옣�븯湲� �쐞�븿
 	static int max;
 
 	public static int solution(int n, int[][] edge) {
@@ -35,8 +35,8 @@ public class MostRemoteNode {
 		}
 		
 		int startPoint = que.poll();
-		count = countQue.poll(); // level 시작
-		visited[startPoint] = true; // 방문했음
+		count = countQue.poll(); // level �떆�옉
+		visited[startPoint] = true; // 諛⑸Ц�뻽�쓬
 
 		for (int len = 0; len < edge.length; len++) {
 
@@ -61,7 +61,7 @@ public class MostRemoteNode {
 		
 	}
 
-	// 실행 메소드
+	// �떎�뻾 硫붿냼�뱶
 	public static void main(String[] args) {
 		int[][] edge = { { 3, 6 }, { 4, 3 }, { 3, 2 }, { 1, 3 }, { 1, 2 }, { 2, 4 }, { 5, 2 } };
 		System.out.println(solution(6, edge));
